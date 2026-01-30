@@ -1,4 +1,4 @@
-- Keep the project minimal: one Welcome page + one API endpoint.
-- Client fetches from `/api/hello` via Vite proxy.
+- Keep the project minimal: one server + one welcome page.
+- Server serves static HTML from `server/public`.
 - Server listens on port 3001.
 - Prefer small, focused changes.

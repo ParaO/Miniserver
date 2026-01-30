@@ -3,28 +3,28 @@
 Minimal example:
 - `server/` = Node + Express, serves one static welcome page
 
-## Mikä tämä on?
+## What is this?
 
-Tämä repo on tarkoituksella pieni harjoitusprojekti, jonka avulla voi opetella:
+This repo is intentionally a tiny practice project to learn:
 
-- Visual Studio Coden perusworkflow (kansion avaaminen, Terminal, tiedostojen muokkaus ja ajaminen)
-- GitHub Copilot Chat -agentin hyödyntäminen koodin kanssa (kysy, pyydä muutoksia, anna sen tehdä toistuvat työvaiheet)
-- VS Code **Ports** -näkymän käyttö (portin “forwardaus” ja **Forwarded Address**), jolla paikallinen/remote-ympäristön palvelu saadaan helposti auki selaimeen
+- Visual Studio Code basics (opening a folder, Terminal, editing files, running a local server)
+- How to use GitHub Copilot Chat as an “agent” while coding (ask for changes, explanations, debugging help)
+- VS Code **Ports** view (port forwarding + the **Forwarded Address**) so a local/remote dev server can be opened easily in a browser
 
-### VS Code + Copilot -vinkkejä
+### VS Code + Copilot tips
 
-- Pyydä agenttia selittämään tiedosto: “Selitä mitä `server/index.js` tekee.”
-- Pyydä pieniä muutoksia: “Lisää sivulle uusi kappale ja pidä tyylit siistinä.”
-- Pyydä debuggausapua: “Miksi `npm run dev` ei käynnisty? Tässä virhe…”
-- Pyydä ohjattuja askeleita: “Miten lisään toisen HTML-sivun ja reitin?”
+- Ask for an explanation: “Explain what `server/index.js` does.”
+- Ask for small changes: “Add a new paragraph and keep the styling clean.”
+- Ask for debugging help: “Why does `npm run dev` fail? Here is the error…”
+- Ask for guided steps: “How do I add a second HTML page and a route?”
 
 ### Ports / Forwarded Address
 
-- Tämä serveri kuuntelee portissa **3001**.
-- Jos ajat projektia *omalla koneella*, avaat yleensä suoraan `http://localhost:3001/`.
-- Jos työskentelet *remote-ympäristössä* (esim. SSH/WSL/dev container/Codespaces), VS Code näyttää **Ports**-näkymässä portin ja tarjoaa **Forwarded Address** -osoitteen, jolla saat palvelun näkyviin selaimeen.
+- This server listens on port **3001**.
+- If you run it on your own machine, you usually open `http://localhost:3001/`.
+- If you work in a remote environment (SSH/WSL/dev container/Codespaces), VS Code can show the port in the **Ports** view and provide a **Forwarded Address** link you can open in the browser.
 
-Turva: jos teet portista Public/jaat osoitetta muille, huomioi että palvelu voi näkyä ulospäin. Pidä projekti tarkoituksella “demo-only” ja sulje portin forwardaus kun et tarvitse sitä.
+Security note: if you make a forwarded port public / share the forwarded address, the service may become reachable from outside. Keep this as a demo-only project and stop forwarding when you don’t need it.
 
 ## Prerequisites
 
