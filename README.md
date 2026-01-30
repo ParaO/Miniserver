@@ -3,6 +3,29 @@
 Minimal example:
 - `server/` = Node + Express, serves one static welcome page
 
+## Mikä tämä on?
+
+Tämä repo on tarkoituksella pieni harjoitusprojekti, jonka avulla voi opetella:
+
+- Visual Studio Coden perusworkflow (kansion avaaminen, Terminal, tiedostojen muokkaus ja ajaminen)
+- GitHub Copilot Chat -agentin hyödyntäminen koodin kanssa (kysy, pyydä muutoksia, anna sen tehdä toistuvat työvaiheet)
+- VS Code **Ports** -näkymän käyttö (portin “forwardaus” ja **Forwarded Address**), jolla paikallinen/remote-ympäristön palvelu saadaan helposti auki selaimeen
+
+### VS Code + Copilot -vinkkejä
+
+- Pyydä agenttia selittämään tiedosto: “Selitä mitä `server/index.js` tekee.”
+- Pyydä pieniä muutoksia: “Lisää sivulle uusi kappale ja pidä tyylit siistinä.”
+- Pyydä debuggausapua: “Miksi `npm run dev` ei käynnisty? Tässä virhe…”
+- Pyydä ohjattuja askeleita: “Miten lisään toisen HTML-sivun ja reitin?”
+
+### Ports / Forwarded Address
+
+- Tämä serveri kuuntelee portissa **3001**.
+- Jos ajat projektia *omalla koneella*, avaat yleensä suoraan `http://localhost:3001/`.
+- Jos työskentelet *remote-ympäristössä* (esim. SSH/WSL/dev container/Codespaces), VS Code näyttää **Ports**-näkymässä portin ja tarjoaa **Forwarded Address** -osoitteen, jolla saat palvelun näkyviin selaimeen.
+
+Turva: jos teet portista Public/jaat osoitetta muille, huomioi että palvelu voi näkyä ulospäin. Pidä projekti tarkoituksella “demo-only” ja sulje portin forwardaus kun et tarvitse sitä.
+
 ## Prerequisites
 
 - Install **Node.js (LTS)** on the machine you want to run this on.
